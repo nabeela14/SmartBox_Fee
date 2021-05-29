@@ -70,7 +70,7 @@ public class SignUp {
         ResultSet resultSet=null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","rootnabee");
+            Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","root");
             String query="select max(Id) from RegisterUser ";
             Statement st=connection.createStatement();
             resultSet=st.executeQuery(query);
@@ -86,7 +86,7 @@ public class SignUp {
     void insertDetail(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","rootnabee");
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","root");
             String query="insert into RegisterUser values(?,?,?,?)";
             PreparedStatement statement=connection.prepareStatement(query);
             statement.setInt(1,getId());
