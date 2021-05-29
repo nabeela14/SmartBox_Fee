@@ -69,7 +69,7 @@ public class Login {
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","rootnabee");
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","root");
             String query="select*from RegisterUser where Username=? and Password=?";
             PreparedStatement preparedStatement=connection.prepareStatement(query);
             preparedStatement.setString(1,user);
