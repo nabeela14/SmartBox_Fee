@@ -139,7 +139,7 @@ public class AddFee {
         public void CourCombo(){
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","rootnabee");
+                Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Smartbox","root","root");
                 String query="select Course_Name from Course";
                 PreparedStatement statement=connection.prepareStatement(query);
                 ResultSet resultSet=statement.executeQuery();
