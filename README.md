@@ -1,9 +1,8 @@
 # SmartBox_Fee
 SmartBox is an efficient Fees Management System  capable of storing and managing data regarding payments.
-It is implemented using Java Swing and MySQL Database.
-![signup](https://raw.githubusercontent.com/nabeela14/SmartBox_Fee/Snapshots/Signup.png)
-![addfee](https://raw.githubusercontent.com/nabeela14/SmartBox_Fee/Snapshots/AddFee.png)
+It is implemented using **`Java Swing`** and **`MySQL Database`**.
 
+![](https://github.com/nabeela14/SmartBox_Fee/blob/df1611bc6edf6bf93a44a28040ed15aedba273ea/Snapshots/Signup.png)
 
 
 
